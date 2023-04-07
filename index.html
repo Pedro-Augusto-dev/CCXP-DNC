@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCXP 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="ccxp 2 1.png" width="100">
+    </header>
+    <div id="contexto">
+        <div>
+            <h1>REVIVA O ÉPICO</h1><span>DE 01 A 04 DE DEZEMBRO</span>
+            <h4>
+
+                Você consegue sentir? É aquela sensação<br>
+                de finalmente poder falar em voz alta: "estamos<br>
+                em casa". Sim, em dezembro de 2022,<br>
+                teremos a volta da CCXP física. Mas não será<br>
+                qualquer CCXP, vai ser a maior de todos os<br>
+                tempos. Prepare-se para visitar seus<br>
+                universos favoritos, explorar o Artists' Valley,<br>
+                se emocionar nos auditórios e encontrar<br>
+                aventuras épicas a cada passo pelos nossos<br>
+                corredores.
+
+            </H4>
+        </div>
+        <div id="count">
+            <div id="time">
+                <div>
+                    <h2 id="dia"> 00 D </h2>
+                </div>
+                <div>
+                    <h2 id="hora"> 00 H </h2>
+                </div>
+                <div>
+                    <h2 id="minuto"> 00 M </h2>
+                </div>
+                <div>
+                    <h2 id="segundo"> 00 S </h2><br>
+                </div>
+            </div>
+            <div id="video">
+                <h3>
+                    PARA A MAIOR CCXP DE TODOS OS TEMPOS
+                </h3>
+                <video width="880" height="510" autoplay loop muted>
+                    <source src="Arlequina.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="conteudo">
+        <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
+    </div>
+    <div id="convites">
+        <img 
+            class="convite" 
+            src="image 5.png" 
+            onclick="selectCard('#primeiro')"
+            onmouseout="highLigthCard('#primeiro')"
+            onmouseover="highLigthCard('#primeiro')" 
+            id="primeiro" 
+            alt="" />
+        <img 
+            class="convite" src="image 3.png"
+            onclick="selectCard('#segundo2')"
+            onmouseout="highLigthCard('#segundo2')"
+            onmouseover="highLigthCard('#segundo2')" 
+            id="segundo2" 
+            alt="" />
+        <img 
+            class="convite" 
+            src="image 2.png"
+            onclick="selectCard('#terceiro')" 
+            onmouseout="highLigthCard('#terceiro')"
+            onmouseover="highLigthCard('#terceiro')" 
+            id="terceiro" 
+            alt="" />
+        <img 
+            class="convite" src="image 4.png"
+            onclick="selectCard('#quarto')" 
+            onmouseout="highLigthCard('#quarto')"
+            onmouseover="highLigthCard('#quarto')" 
+            id="quarto" class="card-ingresso" 
+            alt="" />
+        <div>
+            <button id="pedro" onclick="showSelectedCards()" aonmouseenter="movimentoa()" onmouseout="saida()"> GARANATA O SEU! </button>
+        </div>
+    </div>
+    <div id="forms">
+        <form action="https://www.google.com/">
+            <input type="email" placeholder="E-mail" required>
+            <input type="submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
